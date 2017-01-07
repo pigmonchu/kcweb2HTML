@@ -4,8 +4,11 @@
 		<title>digestiveThinking</title>
 		<meta charset="UTF-8">
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400, 400i,700" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/grid.css">
+		<link rel="stylesheet" type="text/css" href="styles/test.css">
+		<link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 	</head>
 	<body>
 		<header class="header home">
@@ -13,32 +16,68 @@
 			<div class="container">	
 				<p class="cite hide-mv">El cambio se produce cuando uno se convierte en lo que es,<br/> no cuando trata de convertirse en lo que no es.</p>
 				<div class="row">
-					<div class="col-mv-6 offset-mv-3 col-tb-4 col-sd-2">
-						<img src="assets/images/logoHomePresentationOn.png" class="responsive">
+					<div class="header-logo col-mv-4 offset-mv-4 col-tb-4 col-sd-2">
 					</div>
-					<div class="col-mv-12 col-tb-8 col-sd-10" >
+					<div class="header-title col-mv-12 col-tb-8 col-sd-10" >
 						<h1 class="title">Este es mi cajón de sastre...</h1>
 						<p class="description hide-mv">Una caja abierta en la que dejo aquello que me interesa y que quizás pueda servir para otros.<br/>También es mi presentación en web.<br/>A ver como queda...</p>
+						<div class="continue">
+						</div>
 					</div>
 				</div>
 			</div>				
 		</header>
 
 		<nav class="navbar">
-			<ul class="navbar-list">
-				<li class="navbar-item">
-					<a class="navbar-link" href="">Experiencia</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-link" href="">Proyectos</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-link" href="">Quien soy</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-link" href="">Contactos</a>
-				</li>
-			</ul>
+			<div class="container">
+				<div class="navbar-logo"></div>
+				<!--div class="navbar-icon-menu"-->
+				<input type="checkbox" class="navbar-check" id="navbar-check">
+				<label class="navbar-label" for="navbar-check"></label>
+				<!--/div-->
+				<ul class="navbar-list">
+					<li class="navbar-item">
+						<a class="navbar-link" href="">Experiencia</a>
+					</li>
+					<li class="navbar-item active">
+						<a class="navbar-link" href="">Proyectos</a>
+					</li>
+					<li class="navbar-item">
+						<a class="navbar-link" href="">Quien soy</a>
+					</li>
+					<li class="navbar-item">
+						<a class="navbar-link" href="">Contacto</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
+		
+		<main class="container">
+			<section id="work-life" class="work-life">
+				<div class="row">
+					<div class="col-12">
+						<h2>Experiencia laboral</h2>
+						<h3>Como me gano la vida</h3>
+						<p><strong>Desde 1997 dedicado profesionalmente al desarrollo de software</strong>. Pasé por varias empresas de servicios hasta recabar en FCC Servicios Ciudadanos trabajando para el contrato de Limpieza Viaria y Recogida de Residuos de El Puerto de Santa María como responsable de informática y comunicación.</p>
+						<p>He trabajado con diferentes lenguajes y en diferentes plataformas. <strong>Actualmente</strong> estoy en proceso de <strong>convertirme en Full Stack Web Developer</strong> para lo que estoy compaginando el <strong>trabajo</strong> y la realización de <strong>dos masters en programación</strong>:</p>
+						<ul>
+							<li class="first"><a href="https://keepcoding.io/es/keepcodingstartupengineeringmasterbootcamp/" target="_blank">KeepCoding Master Bootcamp IV Edición.</a></li>
+							<li class="subordinate">Desarrollo para móviles.</li>
+							<li class="subordinate">Finaliza en sep-17.</li>
+							<li class="first"><a href="https://keepcoding.io/es/keepcoding-web-development-master-bootcamp/" target="_blank">KeepCoding Web Development Master Bootcamp II Edición</a></li>
+							<li class="subordinate">Desarrollo Web</li>
+							<li class="subordinate">Finaliza en nov-17</li>
+						</ul>						
+					</div>			  	
+			  </div>
+				<div class="row">
+					<div class="col-12">
+						<h3>Trayectoria laboral</h3>
+					</div>
+				</div>
+				
+			</section>
+		
+		</main>
 	</body>
 </html>
