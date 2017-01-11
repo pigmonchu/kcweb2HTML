@@ -1,83 +1,248 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>digestiveThinking</title>
-		<meta charset="UTF-8">
-		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400, 400i,700" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="styles/styles.css">
-		<link rel="stylesheet" type="text/css" href="styles/grid.css">
-		<link rel="stylesheet" type="text/css" href="styles/test.css">
-		<link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
-	</head>
-	<body>
-		<header class="header home">
-			<!--div class="title-img" id="title-img"></div-->
-			<div class="container">	
-				<p class="cite hide-mv">El cambio se produce cuando uno se convierte en lo que es,<br/> no cuando trata de convertirse en lo que no es.</p>
-				<div class="row">
-					<div class="header-logo col-mv-4 offset-mv-4 col-tb-4 col-sd-2">
-					</div>
-					<div class="header-title col-mv-12 col-tb-8 col-sd-10" >
-						<h1 class="title">Este es mi cajón de sastre...</h1>
-						<p class="description hide-mv">Una caja abierta en la que dejo aquello que me interesa y que quizás pueda servir para otros.<br/>También es mi presentación en web.<br/>A ver como queda...</p>
-						<div class="continue">
-						</div>
-					</div>
-				</div>
-			</div>				
-		</header>
+  <head>
+    <title>digestiveThinking</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400, 400i,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/grid-flex.css">
+    <!--link rel="stylesheet" type="text/css" href="styles/test.css"-->
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+  </head>
+  <body>
+    <header class="header home">
+      <!--div class="title-img" id="title-img"></div-->
+      <div class="container">  
+        <p class="cite hidden-mv">El cambio se produce cuando uno se convierte en lo que es,<br/> no cuando trata de convertirse en lo que no es.</p>
+        <div class="row">
+          <div class="header-logo col-mv-4 offset-mv-4 col-tb-4 col-sd-2">
+          </div>
+          <div class="header-title col-mv-12 col-tb-8 col-sd-10" >
+            <h1 class="title">Este es mi cajón de sastre...</h1>
+            <p class="description hidden-mv">Una caja abierta en la que dejo aquello que me interesa y que quizás pueda servir para otros.<br/>También es mi presentación en web.<br/>A ver como queda...</p>
+            <div class="continue vLink" data-url="#experience">
+            </div>
+          </div>
+        </div>
+      </div>        
+    </header>
 
-		<nav class="navbar">
-			<div class="container">
-				<div class="navbar-logo"></div>
-				<!--div class="navbar-icon-menu"-->
-				<input type="checkbox" class="navbar-check" id="navbar-check">
-				<label class="navbar-label" for="navbar-check"></label>
-				<!--/div-->
-				<ul class="navbar-list">
-					<li class="navbar-item">
-						<a class="navbar-link" href="">Experiencia</a>
-					</li>
-					<li class="navbar-item active">
-						<a class="navbar-link" href="">Proyectos</a>
-					</li>
-					<li class="navbar-item">
-						<a class="navbar-link" href="">Quien soy</a>
-					</li>
-					<li class="navbar-item">
-						<a class="navbar-link" href="">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		
-		<main class="container">
-			<section id="work-life" class="work-life">
-				<div class="row">
-					<div class="col-12">
-						<h2>Experiencia laboral</h2>
-						<h3>Como me gano la vida</h3>
-						<p><strong>Desde 1997 dedicado profesionalmente al desarrollo de software</strong>. Pasé por varias empresas de servicios hasta recabar en FCC Servicios Ciudadanos trabajando para el contrato de Limpieza Viaria y Recogida de Residuos de El Puerto de Santa María como responsable de informática y comunicación.</p>
-						<p>He trabajado con diferentes lenguajes y en diferentes plataformas. <strong>Actualmente</strong> estoy en proceso de <strong>convertirme en Full Stack Web Developer</strong> para lo que estoy compaginando el <strong>trabajo</strong> y la realización de <strong>dos masters en programación</strong>:</p>
-						<ul>
-							<li class="first"><a href="https://keepcoding.io/es/keepcodingstartupengineeringmasterbootcamp/" target="_blank">KeepCoding Master Bootcamp IV Edición.</a></li>
-							<li class="subordinate">Desarrollo para móviles.</li>
-							<li class="subordinate">Finaliza en sep-17.</li>
-							<li class="first"><a href="https://keepcoding.io/es/keepcoding-web-development-master-bootcamp/" target="_blank">KeepCoding Web Development Master Bootcamp II Edición</a></li>
-							<li class="subordinate">Desarrollo Web</li>
-							<li class="subordinate">Finaliza en nov-17</li>
-						</ul>						
-					</div>			  	
-			  </div>
-				<div class="row">
-					<div class="col-12">
-						<h3>Trayectoria laboral</h3>
-					</div>
-				</div>
-				
-			</section>
-		
-		</main>
-	</body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-logo navbar-link" href="#"></div>
+        <!--div class="navbar-icon-menu"-->
+        <input type="checkbox" class="navbar-check" id="navbar-check">
+        <label class="navbar-label" for="navbar-check"></label>
+        <!--/div-->
+        <ul class="navbar-list">
+          <li class="navbar-item active hidden-ld hidden-sd hidden-tb">
+            <a class="navbar-link" href="#">Inicio</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#experience">Experiencia</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="">Proyectos</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="">Quien soy</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main class="container">
+      <section id="experience" class="experience">
+        <a href="#experience"></a>
+        
+          <article class="current-situation">
+            <div class="col-12"> 
+              <h2>Experiencia laboral</h2>
+              <h3>Como me gano la vida</h3>
+            </div>
+            <div class="row"> 
+              <div class="col-8 col-mv-12">
+                <p><strong>Desde 1997 dedicado profesionalmente al desarrollo de software</strong>. Pasé por varias empresas de servicios hasta recabar en FCC Servicios Ciudadanos trabajando para el contrato de Limpieza Viaria y Recogida de Residuos de El Puerto de Santa María como responsable de informática y comunicación.</p>
+                <p>He trabajado con diferentes lenguajes y en diferentes plataformas. <strong>Actualmente</strong> estoy en proceso de <strong>convertirme en Full Stack Web Developer</strong> para lo que estoy compaginando el <strong>trabajo</strong> y la realización de <strong>dos masters en programación</strong>:</p>
+                <ul>
+                  <li class="first"><a href="https://keepcoding.io/es/keepcodingstartupengineeringmasterbootcamp/" target="_blank">KeepCoding Master Bootcamp IV Edición.</a></li>
+                  <li class="subordinate">Desarrollo para móviles.</li>
+                  <li class="subordinate">Finaliza en sep-17.</li>
+                  <li class="first"><a href="https://keepcoding.io/es/keepcoding-web-development-master-bootcamp/" target="_blank">KeepCoding Web Development Master Bootcamp II Edición</a></li>
+                  <li class="subordinate">Desarrollo Web</li>
+                  <li class="subordinate">Finaliza en nov-17</li>
+                </ul>            
+              </div>
+            	<figure class="offset-mv-2 col-mv-8 offset-right-mv-2 col-4 downloadCV" data-url="./assets/docs/cv.pdf">
+                <div class="flip curriculum">
+                </div>
+                <figcaption>
+                  <a class="attribution" href="http://www.freepik.com/free-vector/collection-of-white-and-black-quality-badge_866084.htm">Designed by Freepik</a>
+                  <a href="./assets/docs/cv.pdf" target="_blank">Curriculum Detallado</a>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="jobs-history row">
+            <h3 class="col-12">Trayectoria laboral</h3>
+            <div class="corporations-list col-12">
+              <figure class="occupational-history col-mv-5">
+                <div class="time-arrow">
+                  <div class="corporation year-jump-0">
+                    <p class="corp-name">Grupo CP</p>
+                    <div class="corp-ball">
+                      <input type="radio" name="corp-ball-radio" class="corp-ball-radio" id="corp-ball-radio" value="CP">
+                      <label class="corp-ball-label" for="corp-ball-radio"></label>
+                    </div>
+                    <p class="corp-year"><span class="siglo">19</span>97</p>
+                  </div>
+                  <div class="corporation year-jump-1">
+                    <p class="corp-name">Asnef-equifax</p>
+                    <div class="corp-ball">
+                      <input type="radio" name="corp-ball-radio" class="corp-ball-radio" id="corp-ball-radio" value="ASNEF">
+                      <label class="corp-ball-label" for="corp-ball-radio"></label>
+                    </div>
+                    <p class="corp-year"><span class="siglo">19</span>99</p>
+                  </div>
+                  <div class="corporation year-jump-0">
+                    <p class="corp-name">INSA</p>
+                    <div class="corp-ball">
+                      <input type="radio" name="corp-ball-radio" class="corp-ball-radio" id="corp-ball-radio" value="INSA">
+                      <label class="corp-ball-label" for="corp-ball-radio"></label>
+                    </div>
+                    <p class="corp-year"><span class="siglo">20</span>00</p>
+                  </div>
+                  <div class="corporation year-jump-0">
+                    <p class="corp-name">IBM</p>
+                    <div class="corp-ball">
+                      <input type="radio" name="corp-ball-radio" class="corp-ball-radio" id="corp-ball-radio" value="IBM">
+                      <label class="corp-ball-label" for="corp-ball-radio"></label>
+                    </div>
+                    <p class="corp-year"><span class="siglo">20</span>01</p>
+                  </div>
+                  <div class="corporation year-jump-5">
+                    <p class="corp-name">Futuria</p>
+                    <div class="corp-ball">
+                      <input type="radio" name="corp-ball-radio" class="corp-ball-radio" id="corp-ball-radio" value="FUTURIA">
+                      <label class="corp-ball-label" for="corp-ball-radio"></label>
+                    </div>
+                    <p class="corp-year"><span class="siglo">20</span>07</p>
+                  </div>
+                  <div class="corporation year-jump-0">
+                    <p class="corp-name">FCC</p>
+                    <div class="corp-ball">
+                      <input type="radio" name="corp-ball-radio" class="corp-ball-radio" id="corp-ball-radio" value="FCC">
+                      <label class="corp-ball-label" for="corp-ball-radio"></label>
+                    </div>
+                    <p class="corp-year"><span class="siglo">20</span>08</p>
+                  </div>
+                  <div class="corporation today">
+                    <div class="corp-arrow">
+                    </div>
+                  </div>
+                  <div class="corporation year-jump-0">
+                    <p class="corp-name">Hoy</p>
+                    <div class="corp-ball">
+                      <input type="radio" name="corp-ball-radio" class="corp-ball-radio" checked id="corp-ball-radio" value="HOY">
+                      <label class="corp-ball-label" for="corp-ball-radio"></label>
+                    </div>
+                    <p class="corp-year"><span class="siglo">20</span>17</p>
+                  </div>
+                </div>
+                <figcaption>Lista de empresas. Click en cada una para más detalle.</figcaption>
+              </figure>
+              <div class="jobs-details col-mv-6">
+                <article class="corp-description hidden CP">
+                  <ul class="job-functions">
+                    <li class="role"><span class="period">abr-98 a may-99</span><strong>Programador Senior - Génesis</strong> - ASNEF-Equifax</li>
+                    <li class="job"><strong>Construcción</strong> de <strong>versión estable</strong> del producto a partir de una versión alfa construida por analistas de riesgo.</li>
+                    <li><strong>Inclusión</strong> de función matemática de <strong>logaritmo neperiano</strong> para clientes sin librerías matemáticas instaladas.</li>
+                    <li><strong>Prototipado en </strong>Visual Basic 6 y <strong>construcción</strong> en COBOL</li>
+                    <li class="role"><span class="period">mar/97 a mar/98</span><strong> Programador Junior - Diversos proyectos</strong> - ASNEF-Equifax</li>
+                    <li class="job">Incorporación en equipo de desarrollo de <strong>SCA</strong> (consulta bancaria online fichero de morosidad). <strong>Instalación</strong> del producto en <strong>Caixa Manresa.</strong></li>
+                    <li class="job">Colaboración con otros equipos de <strong>desarrollo</strong> proveyendo/investigando <strong>pequeñas herramientas</strong> de <strong>comunicación</strong> con <em>CICS</em></li>
+                  </ul>
+                </article>  
+                <article class="corp-description hidden ASNEF">
+                  <ul class="job-functions">
+                    <li class="role"><span class="period">jun-99 a jun-00</span><strong>Analista Programador - Génesis</strong> - Departamento de sistemas de decisión.</li>
+                    <li class="job">Responsable del <strong>desarrollo, mantenimiento</strong> e <strong>instalación</strong> de Génesis (evaluador de crédito) en diferentes plataformas: <em>COBOL/CICS/DB2 - Natural/ADABAS - C/Tuxedo/Oracle</em></li>
+                    <li class="job"><strong>Creación</strong> de <strong>herramientas</strong> de mantenimiento de ficheros en <em>Visual Basic 6.</em>
+                    <li class="job">Participación en <strong>prototipado</strong> de <strong>nuevo producto</strong>, evaluación masiva para créditos preconcedidos.</li>
+                  </ul>
+                </article>  
+                <article class="corp-description hidden INSA">
+                  <ul class="job-functions">
+                    <li class="role"><span class="period">jul-00 a ene-01</span><strong>Analista Orgánico</strong> - Cambio plataforma BBDD Clientes - Telefónica Móviles</li>
+                    <li class="job">Colaboración en el <strong>diseño</strong> e <strong>implementación</strong> de la <strong>arquitectura</strong> del nuevo <strong>servidor IBM</strong> con <em>OS390 y C/CICS/DB2.</em></li>
+                    <li class="job"><strong>Premio</strong> por conseguir establecer un procedimiento de compilación dinámica en C.</li>
+                    <li class="job">Creación de <strong>documentación</strong> para el equipo <strong>de desarrollo según especificaciones funcionales.</strong></li>
+                    <li class="job"><strong>Dirección</strong> y <strong>formación</strong> del <strong>equipo de desarrollo</strong> (de 8 a 12 personas).</li>
+                  </ul>
+                </article>  
+                <article class="corp-description hidden IBM">
+                  <ul class="job-functions">
+                    <li class="role"><span class="period">ene-05 a jun-05</span><strong>IT Specialist</strong> - Proyecto ATLAS - Telefónica de España.</li>
+                    <li class="subrole">Desarrollo a medida de servicios Web con JSP  Madrid, España.</li>
+                    <li class="role"><span class="period">ene-03 a dic-04</span><strong>IT Specialist</strong> - Proyecto ATIS - Telefónica de España.</li>
+                    <li class="subrole"><strong>Consultor, analista y desarrollador</strong> responsable del <strong>módulo IT</strong> del <strong>Sistema ATIS</strong> (Sistema de gestión de facturación y atención al cliente) para <strong>Telefónica Argentina, Brasil, Perú y Chile</strong>.</li>
+                    <li class="job"><strong>Programador</strong> en un <strong>proyecto de investigación</strong> para automatizar las pruebas de ATIS v1 con un <strong>motor experimental de pruebas unitarias</strong> en <em>Java</em>.</li>
+                    <li class="job"><strong>Nuevo responsable de desarrollo IT</strong> para <strong>ATIS v1. Proyecto con problemas</strong> de cumplimiento de plazos y funcionalidades atascadas. Logramos <strong>entrega en plazo</strong> y con <strong>conformidad</strong> del cliente.</li>
+                    <li class="job"><strong>Responsable</strong> de Equipo  de <strong>mantenimiento y mejora</strong> (2 programadores) del módulo de <strong>IT de ATIS v1</strong> en <em>COBOL/CICS/DB2</em>.</li>
+                    <li class="job">Participación en el <strong>primer proyecto de integración</strong> de consultores de <strong>PriceWaterhousecooper</strong> en el área de <strong>telco</strong>.</li>
+                    <li class="job"><strong>Creación</strong> y síntesis de los <strong>modelos de negocio</strong> para las 4 operadoras en cuanto a la <strong>gestión de IT</strong> para el desarrollo de <strong>ATIS v2</strong>.</li>
+                    <li class="job"><strong>Instalación de ATIS v1</strong>  en sistemas de <strong>IBM Brasil</strong> para Telefónica y <strong>formación <em>in situ</em></strong> del nuevo equipo de desarrollo.</li>
+                    <li class="role"><span class="period">ene-01 a dic-02</span><strong>IT Specialist</strong> - Cambio plataforma BBDD Clientes - Telefónica Móviles.</li>
+                    <li class="subrole"><strong>Analista y desarrollador</strong> responsable servicios de acceso online al backend del CRM de Telefónica Móviles.</li>
+                    <li class="job"><strong>Proyecto con problemas</strong> de entrega por estar diseñado para COBOL y construido en C.</li>
+                    <li class="job"><strong>Ascenso a Analista Funcional</strong> a petición del cliente. En esta segunda fase <strong>se entrega en fecha con aceptación del cliente</strong>.</li>
+                    <li class="job"><strong>Responsable equipo de mantenimiento y mejora</strong> de servicios de acceso online a BBDD de cliente (3 personas).</li>
+                  </ul>
+                </article>  
+                <article class="corp-description hidden FUTURIA">
+                  <ul class="job-functions">
+                    <li class="role"><span class="period">jun-07 a dic-09</span>Senior Software Developer.</li>
+                    <li class="job"><strong>Análisis, diseño y construcción</strong> del sistema de gestión de trabajos para ATISAE (OCA), con especial atención en la definición de una interfaz intuitiva. <em>MS Visual Studio 2003/Oracle sobre Windows Server</em>.</li>
+                  </ul>
+                </article>  
+                <article class="corp-description hidden FCC">
+                  <ul class="job-functions">
+                    <li class="role"><span class="period">desde abr-08</span><strong>Responsable IT y Comunicación</strong> del contrato LV y RSU  Ayuntamiento - Medio Ambiente.</li>
+                    <li class="subrole">Consultor y desarrollador informático para el Área de Medio Ambiente del Ayuntamiento de El Puerto de Santa María.</li>
+                    <li class="job"><strong>Responsable Web Espacio Público Activo. Estrategia de comunicación del contrato</strong> de Uso Público. Diseño, construcción y mantenimiento de su infraestructura web.</li>
+                    <li class="job"><strong>Soporte IT Inspección Municipal LV y RSU. Diseño y construcción</strong> de pequeñas <strong>responsive Web Apps</strong> a petición de funcionarios (brlim, calendario punto limpio móvil,...).</li>
+                    <li class="job"><strong>Diseño y Edición de documentos</strong> interactivos para informar acciones especiales en la web.</li>
+                    <li class="job"><strong>Construcción y mantenimiento web corporativa</strong> según diseño externo.</li>
+                    <li class="job"><strong>Formación plantilla</strong> de diferentes servicios del Área de medio Ambiente, tanto a <strong>nivel técnico</strong> como en <strong>habilidades de comunicación</strong>.</li>
+                    <li class="job"><strong>Optimización de procesos de negocio</strong> en el <strong>CRA Coto de la Isleta</strong>. <strong>Definición de procedimientos, diseño e implementación de herramientas</strong>.</li>
+                    <li class="job"><strong>Diseño y construcción de Web App</strong> hasta implantación SIG corporativo en el <strong>contrato LV y RSU</strong> de El Puerto de Santa María.</li>
+                  </ul>
+                </article>
+                <article class="corp-description HOY">
+                  <ul class="job-functions">
+                    <li class="role"><span class="period">Actualmente</span> <strong>Full Stack Web Developer in Training</strong>.</li>
+                    <li class="subrole">Consultor y desarrollador informático (Web y Mobile) en formación continua.</li>
+                    <li class="subrole">Para trabajo actual <strong class="corp-description-link" data-url="FCC">ver FCC</strong>.</li>
+                    <li class="job">Maquetación y construcción Frontend.</li>
+                    <li class="job">BackEnd developer.</li>
+                    <li class="job">Mobile developer.</li>
+                    <li class="job">Consultor en IT.</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </article>
+      </section>
+    
+    </main>
+  </body>
+  
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/functions.js"></script>
+
 </html>

@@ -162,9 +162,13 @@
 	padding: 0 1%;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media (max-width: 767px) {
-	.hide-mv {
-		display: none;
+	.hidden-mv {
+		display: none !important
 	}
 
 	.offset-mv-1 {
@@ -301,8 +305,8 @@
 }
 
 @media (min-width: 768px) {
-	.hide-tb {
-		display: none;
+	.hidden-tb {
+		display: none !important
 	}	
 
 	.offset-tb-1 {
@@ -439,8 +443,8 @@
 }
 
 @media (min-width: 1024px) {
-	.hide-sd {
-		display: none;
+	.hidden-sd {
+		display: none !important
 	}	
 
 	.offset-sd-1 {
@@ -577,8 +581,8 @@
 }
 
 @media (min-width: 1200px) {
-	.hide-ld {
-		display: none;
+	.hidden-ld {
+		display: none !important
 	}	
  
 	.offset-ld-1 {
