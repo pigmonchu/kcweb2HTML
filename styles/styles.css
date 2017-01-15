@@ -90,6 +90,11 @@ figcaption a.attribution {
   display: block;
 }
 
+.intro {
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
 @media (max-width: 767px) {
   
   h1 {
@@ -118,6 +123,10 @@ figcaption a.attribution {
 
   p {
     font-size: 14px;
+  }
+  
+  .intro {
+	  font-size: 15px;
   }
 }
 
@@ -682,6 +691,15 @@ ul.job-functions li.job {
   
   
 }
+
+/* +-----------------+
+   |    QUIEN SOY    |
+   +-----------------+ */
+   
+.video-isaac {
+	width: 100%;
+}
+
 
 footer {
 	color: white;
