@@ -63,7 +63,8 @@ a:hover {
   text-decoration: underline;
 }
 
-.experience a {
+.experience a,
+.projects a {
   color: #0FBACB;
 }
 
@@ -700,9 +701,23 @@ ul.job-functions li.job {
 	width: 100%;
 }
 
+/* +---------------+
+   |    TRASTOS    |
+   +---------------+ */
+
+.acciones-contacto {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
 
 footer {
 	color: white;
 	background-color: #8C8C8C;
 	text-align: center;
 }   
+
+.detail-contacto, .acciones-contacto {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}

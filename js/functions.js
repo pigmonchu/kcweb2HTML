@@ -79,7 +79,8 @@ $().ready(function() {
 //    activateItemMenu(virtualAnchor);
   })
 
-  $(".vLink").click(function() { 
+  $(".vLink").click(function(event) { 
+		event.preventDefault();
     var virtualAnchor = $(this).data('url');
     smoothGoto(calculateTopElement(virtualAnchor));    
   });

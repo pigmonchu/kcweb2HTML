@@ -1,6 +1,8 @@
 var ROOT_URL = "http://localhost:8000";
 var API_URL = ROOT_URL + "/api/";
 var MAIL_URL = ROOT_URL + "/_mail/";
+var LISTA_CONTACTOS;
+var TEMPLATE_CONTACTO;
 
 var _validationTypes = {
 	required: "valueMissing",
@@ -35,6 +37,29 @@ var sendContact = function() {
 		
 }
 
+var loadContacts = function(event) {
+	$.ajax({
+			type: "GET",
+			url: API_URL + "contact"
+		})
+		.done(function(data) {
+			for (var i=0; i<data.length; i++) {
+				var item = TEMPLATE_CONTACTO.clone();
+				item.children().children(".nombre-contacto").append(data[i].nombre);
+				item.children().children(".telefono-contacto").append(data[i].telefon);
+				item.children().children(".email-contacto").append(data[i].correoE);
+				item.children().children(".asunto-contacto").append(data[i].asunto);
+				
+				item.appendTo(LISTA_CONTACTOS);
+			}
+
+		})		
+		.fail(function (error) {
+			console.error("Error leyendo contactos.", error);
+		});
+		
+	
+}
 
 $("#form-contact").submit(function(event) {
 	
@@ -131,7 +156,14 @@ $("#form-contact").submit(function(event) {
 				-envía mail a mi mismo
 				-envía respuesta (si procede) al contacto
 	*/
-
-
 	
 })
+
+
+
+$().ready(function() {
+	LISTA_CONTACTOS = $(".lista-contactos");
+	TEMPLATE_CONTACTO = $(".item-contacto").clone();
+	$(".item-contacto").remove();
+	loadContacts();
+});
