@@ -8,7 +8,8 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/grid-flex.css">
-    <!--link rel="stylesheet" type="text/css" href="styles/test.css"-->
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="stylesheet" type="text/css" href="styles/test.css">
     <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
   </head>
   <body>
@@ -17,9 +18,9 @@
       <div class="container">  
         <p class="cite hidden-mv">El cambio se produce cuando uno se convierte en lo que es,<br/> no cuando trata de convertirse en lo que no es.</p>
         <div class="row">
-          <div class="header-logo col-mv-4 offset-mv-4 col-tb-4 col-sd-2">
+          <div class="header-logo col-mv size-mv-4 offset-mv-4 col-tb size-tb-4 col-sd size-sd-2">
           </div>
-          <div class="header-title col-mv-12 col-tb-8 col-sd-10" >
+          <div class="header-title col-mv size-mv-12 col-tb size-tb-8 col-sd size-sd-10" >
             <h1 class="title">Este es mi cajón de sastre...</h1>
             <p class="description hidden-mv">Una caja abierta en la que dejo aquello que me interesa y que quizás pueda servir para otros.<br/>También es mi presentación en web.<br/>A ver como queda...</p>
             <div class="continue vLink" data-url="#experience">
@@ -44,29 +45,29 @@
             <a class="navbar-link" href="#experience">Experiencia</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="">Proyectos</a>
+            <a class="navbar-link" href="#projects">Proyectos</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="">Quien soy</a>
+            <a class="navbar-link" href="#whoiam">Quien soy</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="">Contacto</a>
+            <a class="navbar-link" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
     
-    <main class="container">
-      <section id="experience" class="experience">
-        <a href="#experience"></a>
-        
+    
+    <main>
+      <section class="experience" id="experience">
+				<div class="container">
           <article class="current-situation">
             <div class="col-12"> 
               <h2>Experiencia laboral</h2>
               <h3>Como me gano la vida</h3>
             </div>
             <div class="row"> 
-              <div class="col-8 col-mv-12">
+              <div class="col size-8 col-mv size-mv-12">
                 <p><strong>Desde 1997 dedicado profesionalmente al desarrollo de software</strong>. Pasé por varias empresas de servicios hasta recabar en FCC Servicios Ciudadanos trabajando para el contrato de Limpieza Viaria y Recogida de Residuos de El Puerto de Santa María como responsable de informática y comunicación.</p>
                 <p>He trabajado con diferentes lenguajes y en diferentes plataformas. <strong>Actualmente</strong> estoy en proceso de <strong>convertirme en Full Stack Web Developer</strong> para lo que estoy compaginando el <strong>trabajo</strong> y la realización de <strong>dos masters en programación</strong>:</p>
                 <ul>
@@ -78,7 +79,7 @@
                   <li class="subordinate">Finaliza en nov-17</li>
                 </ul>            
               </div>
-            	<figure class="offset-mv-2 col-mv-8 offset-right-mv-2 col-4 downloadCV" data-url="./assets/docs/cv.pdf">
+            	<figure class="offset-mv-2 col-mv size-mv-8 offset-right-mv-2 col size-4 downloadCV" data-url="./assets/docs/cv.pdf">
                 <div class="flip curriculum">
                 </div>
                 <figcaption>
@@ -88,10 +89,10 @@
               </figure>
             </div>
           </article>
-          <article class="jobs-history row">
+          <article class="jobs-history row" id="jobs-history">
             <h3 class="col-12">Trayectoria laboral</h3>
-            <div class="corporations-list col-12">
-              <figure class="occupational-history col-mv-5">
+            <div class="corporations-list col size-12">
+              <figure class="occupational-history col-mv size-mv-5">
                 <div class="time-arrow">
                   <div class="corporation year-jump-0">
                     <p class="corp-name">Grupo CP</p>
@@ -156,7 +157,7 @@
                 </div>
                 <figcaption>Lista de empresas. Click en cada una para más detalle.</figcaption>
               </figure>
-              <div class="jobs-details col-mv-6">
+              <div class="jobs-details col-mv size-mv-6">
                 <article class="corp-description hidden CP">
                   <ul class="job-functions">
                     <li class="role"><span class="period">abr-98 a may-99</span><strong>Programador Senior - Génesis</strong> - ASNEF-Equifax</li>
@@ -172,7 +173,7 @@
                   <ul class="job-functions">
                     <li class="role"><span class="period">jun-99 a jun-00</span><strong>Analista Programador - Génesis</strong> - Departamento de sistemas de decisión.</li>
                     <li class="job">Responsable del <strong>desarrollo, mantenimiento</strong> e <strong>instalación</strong> de Génesis (evaluador de crédito) en diferentes plataformas: <em>COBOL/CICS/DB2 - Natural/ADABAS - C/Tuxedo/Oracle</em></li>
-                    <li class="job"><strong>Creación</strong> de <strong>herramientas</strong> de mantenimiento de ficheros en <em>Visual Basic 6.</em>
+                    <li class="job"><strong>Creación</strong> de <strong>herramientas</strong> de mantenimiento de ficheros en <em>Visual Basic 6.</em></li>
                     <li class="job">Participación en <strong>prototipado</strong> de <strong>nuevo producto</strong>, evaluación masiva para créditos preconcedidos.</li>
                   </ul>
                 </article>  
@@ -237,12 +238,115 @@
               </div>
             </div>
           </article>
+				</div>          
       </section>
-    
+      <section class="projects" id="projects">
+	      <div class="container">
+	        <div class="row col size-12">
+	          <h2>Proyectos</h2>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet nisl accumsan, hendrerit nibh in, sagittis tellus. Morbi vitae dolor eu orci euismod pharetra. Cras mollis lacus non justo consequat, vitae vehicula est tempus. Nullam et volutpat massa, vel semper nibh. Pellentesque vel mi eu est gravida fermentum sit amet ut leo. Etiam ex tellus, suscipit quis lorem vitae, fermentum gravida purus. Vivamus porta ac eros at aliquet. Pellentesque interdum lacus a finibus fermentum. Aenean eget nisi nisl. Duis porta, velit nec tincidunt finibus, tellus velit volutpat nibh, et scelerisque mi metus sed mi.</p>
+	        </div>
+	      </div>
+      </section>
+      <section class="whoiam" id="whoiam">
+	      <div class="container">
+	        <div class="row col size-12">
+	          <h2>Quien soy</h2>
+	          <p>Sed tempor vestibulum erat, id gravida ante mattis at. Etiam enim lacus, suscipit at tristique et, malesuada sed orci. Maecenas nec orci et arcu ornare aliquet. Mauris id quam finibus, malesuada justo a, sodales magna. Vestibulum blandit neque nec nisl suscipit viverra. Fusce vehicula sit amet lorem sit amet semper. Mauris urna magna, mollis sodales tristique mollis, maximus nec massa. Suspendisse in tellus quis arcu faucibus suscipit.</p>
+	  
+	          <p>Donec id eros eu ante porta imperdiet. Cras non malesuada magna. Nulla hendrerit suscipit viverra. Praesent volutpat vitae quam eu sagittis. Duis vitae magna molestie tortor facilisis feugiat in a felis. Proin a nibh purus. Ut ac dictum erat, vel venenatis sapien. Proin rutrum mi eu ultricies consectetur. Pellentesque vel suscipit risus, sed hendrerit magna. Nullam auctor id augue non pulvinar. Etiam id justo quis augue luctus dapibus. Morbi pretium fermentum lacus id pharetra.</p>
+	        </div>
+	      </div>
+      </section>
+      <section class="contact" id="contact">
+				<div class="container">
+	        <div class="row col size-12 col-mv">
+	          <h2>Contacto</h2>
+						<div class="loader"><div><div></div></div></div>
+						<form id="form-contact" class="form-inline col-offset-2 col size-8 col-mv size-mv-12" name="form-contact" method="get" novalidate>
+							<div class="form-row size-12">
+								<div class="form-field size-9 size-mv-12">
+									<label for="nombre">Nombre</label>
+									<input class="full-size" type="text" id="nombre" name="nombre" placeholder="Nombre completo" required minlength="3">
+									<div class="valueMissing error-msg">Campo requerido</div>
+									<div class="error-msg tooShort">Debe incluir al menos 3 caracteres</div>
+								</div>
+								<div class="form-field size-3 size-mv-12">
+									<label for="telefono">Teléfono</label>
+									<input class="full-size" type="tel" pattern="\d{9}" id="telefono" name="telefono" placeholder="Teléfono" >
+									<div class="error-msg respField">Debe rellenar el teléfono o el correo</div>
+									<div class="error-msg patternMismatch">9 dígitos sin espacios</div>
+								</div>
+							</div>
+							<div class="form-row size-12">
+								<div class="form-field size-12">
+									<label for="correo-e">Correo electrónico</label>
+									<input class="full-size" type="email" id="correo-e" name="correo-e" placeholder="Correo electrónico" >
+									<div class="error-msg respField">Debe rellenar el teléfono o el correo</div>
+									<div class="error-msg typeMismatch">Debe introducir un correo con formato correcto</div>
+								</div>
+							</div>
+							<div class="form-row size-12">
+								<div class="form-field size-12">
+									<label for="me-conoces" class="visible">Como me has conocido
+									</label>
+									<input type="radio" id="friend" name="me-conoces" value="friend">
+										<label class="size-3" for="friend"><span class="radio size-12">Amigos</span></label>
+									<input type="radio" id="mail" name="me-conoces" value="mail">
+										<label class="size-3" for="friend"><span class="radio size-12">Mail</span></label>
+									<input type="radio" id="web" name="me-conoces" value="web">
+										<label class="size-3" for="friend"><span class="radio size-12">Web</span></label>
+									<input type="radio" id="other" name="me-conoces" value="_other">
+										<label class="size-3" for="friend"><span class="radio size-12">Otros</span></label>
+									<input type="text" id="razon" class="full-size optional-other" placeholder="Otra forma">
+										<div class="error-msg valueMissing">Campo requerido</div>
+								</div>
+							</div>
+							<div class="form-row size-12">
+								<div class="form-field size-12">
+									<label for="asunto">Asunto</label>
+									<textarea name="asunto" id="asunto" rows="4" class="full-size" placeholder="Tu mensaje" required minlength="10" data-maxwords="3"></textarea>								
+									<div class="error-msg valueMissing">Campo requerido</div>
+									<div class="error-msg tooShort">Debe incluir al menos 10 caracteres</div>
+									<div class="error-msg maxWords">No más de 150 palabras</div>
+								</div>
+							</div>
+							<div class="form-row ">
+								<div class="form-field offset-10 size-2 offset-mv-8 size-mv-4">
+									<button class="size-12" type="submit">
+										<span class="hidden-mv">Enviar</span>
+										  <i class="fa fa-share"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+	        </div>
+				</div>
+      </section>
     </main>
+
+		<footer class="footer home">
+			<div class="container">
+				<div class="row">
+					<div class="col size-6 col-mv size-mv-12">
+						<p class="copy">Copyright &copy; 2017 Mon Maldonado Rodríguez <span class="hidden-mv">- Aprendiz de persona.</span></p>
+					</div>
+					<div class="col size-6">
+						<p class="contact-data hidden-mv">
+							<i class="fa fa-at"></i> ramon@digestivethinking.com - 
+							<i class="fa fa-phone"></i> 687 485 240 - 
+							<i class="fa fa-map-marker"></i> Puerto Real, Cádiz. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
   </body>
   
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/functions.js"></script>
+  <script src="js/contact.js"></script>
 
 </html>
