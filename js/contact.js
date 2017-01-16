@@ -4,6 +4,8 @@ var MAIL_URL = ROOT_URL + "/_mail/";
 var LISTA_CONTACTOS;
 var TEMPLATE_CONTACTO;
 
+var IE_ME_CONOCES_OTROS = 3; 
+
 var _validationTypes = {
 	required: "valueMissing",
 	minLength: "tooShort",
@@ -86,7 +88,7 @@ $("#form-contact").submit(function(event) {
 		activateError(nombre.id, _validationTypes.required);
 	} 
 	
-	if (nombre.validity.tooShort) {
+	if (nombre.validity.tooShort || nombre.value.length < nombre.dataset.minlength) {
 		activateError(nombre.id,  _validationTypes.minLength);
 	}
 	
@@ -104,7 +106,7 @@ $("#form-contact").submit(function(event) {
 		thisForm.isValid = false;
 	}
 	
-	if (meConoces.value === "_other" && razon.value === '') {
+	if ((meConoces.value === "_other" || meConoces[IE_ME_CONOCES_OTROS].checked) && razon.value === '') {
 		activateError(razon.id, _validationTypes.required);
 		thisForm.isValid = false;
 	} 
@@ -117,7 +119,7 @@ $("#form-contact").submit(function(event) {
 		activateError(asunto.id,  _validationTypes.minLength);
 	} 
 	
-	if (asunto.value.match(/\S+/g).length > asunto.dataset.maxwords) {
+	if (asunto.value && asunto.value.match(/\S+/g).length > asunto.dataset.maxwords) {
 		activateError(asunto.id,  "maxWords");
 		
 	}
