@@ -383,15 +383,12 @@ figcaption a.attribution {
 .flip::after {
   position: relative;
   content: ' ';
-  transform: rotateY(0deg);
 }
 
 .flip:hover {
-  transform: rotateY(180deg);
 }
 
 .flip:hover::after {
-  transform: rotateY(0deg);
 }
 
 .flip.curriculum {
@@ -717,7 +714,32 @@ footer {
 	text-align: center;
 }   
 
+.recargar-contactos {
+	float: right;
+}
 .detail-contacto, .acciones-contacto {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
+
+.leer-contacto:hover,
+.borrar-contacto:hover,
+.recargar-contactos:hover {
+	cursor: pointer;	
+}
+
+.nombre-contacto::before {
+	font-family: FontAwesome;
+	content: "\f2be: ";
+}
+
+.telefono-contacto::before {
+	font-family: FontAwesome;
+	content: "\f095: ";
+}
+
+.email-contacto::before {
+	font-family: FontAwesome;
+	content: "\f1fa: ";
+}
+

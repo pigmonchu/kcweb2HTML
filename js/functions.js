@@ -109,7 +109,14 @@ $().ready(function() {
 	  fixOffsets(event); 
 	  changeMenuStyle(event);
 	});
-
+	
+	$( ".flip.curriculum" ).hover(
+	  function() {
+			$(".flip.curriculum").after().css("visibility", "visible");
+	  }, function() {
+			$(".flip.curriculum").after().css("visibility", "none");
+	  }
+	);
 
 // ----- INICIO -----
   fixOffsets();

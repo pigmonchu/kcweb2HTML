@@ -39,6 +39,13 @@ var sendContact = function() {
 		
 }
 
+var clearContacts = function() {
+	var contactos = LISTA_CONTACTOS.children();
+	for (var i=contactos.length-1; i>=0; i--) {
+		contactos[i].remove();
+	}
+}
+
 var loadContacts = function(event) {
 	$.ajax({
 			type: "GET",
@@ -47,6 +54,7 @@ var loadContacts = function(event) {
 		.done(function(data) {
 			for (var i=0; i<data.length; i++) {
 				var item = TEMPLATE_CONTACTO.clone();
+				item.attr("data-id", data[i].id);
 				item.children().children(".nombre-contacto").append(data[i].nombre);
 				item.children().children(".telefono-contacto").append(data[i].telefon);
 				item.children().children(".email-contacto").append(data[i].correoE);
@@ -54,14 +62,42 @@ var loadContacts = function(event) {
 				
 				item.appendTo(LISTA_CONTACTOS);
 			}
+//Hay que ponerlo aquí porque cada vez que se clona debe asociarse el evento al nuevo elemento.
+			if (data.length > 0) {
+				$(".recargar-contactos").removeClass("hidden");
+			} else {
+				$(".recargar-contactos").addClass("hidden");
+			}
+			$(".borrar-contacto").click(deleteContact);
+			
 
 		})		
 		.fail(function (error) {
 			console.error("Error leyendo contactos.", error);
 		});
-		
+}
+
+var deleteContact = function(event) {
+	var activeElement = $(event.currentTarget.parentNode.parentNode);
+	var id = activeElement.attr("data-id");
+
+	$.ajax({
+			type: "DELETE",
+			url: API_URL + "contact/" + id
+		})
+		.done(function() {
+			activeElement.remove();
+		})		
+		.fail(function (error) {
+			console.error("Error leyendo contactos.", error);
+		});
 	
 }
+
+$(".recargar-contactos").click(function(event) {
+	clearContacts();
+	loadContacts(event);
+});
 
 $("#form-contact").submit(function(event) {
 	
@@ -164,6 +200,7 @@ $("#form-contact").submit(function(event) {
 
 
 $().ready(function() {
+	
 	LISTA_CONTACTOS = $(".lista-contactos");
 	TEMPLATE_CONTACTO = $(".item-contacto").clone();
 	$(".item-contacto").remove();

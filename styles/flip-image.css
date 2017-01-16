@@ -1,0 +1,46 @@
+.flip, .flip::after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:contain;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in;	
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.flip::after {
+  position: relative;
+  content: ' ';
+  transform: rotateY(0deg);
+}
+
+.flip:hover {
+  transform: rotateY(180deg);
+}
+
+.flip:hover::after {
+  transform: rotateY(0deg);
+}
+
+.flip.curriculum {
+  background-image: url('../assets/images/keyboard.png');
+  height: calc(100% - 40px);
+}
+
+@media (max-width: 767px) {
+  .flip.curriculum {
+    min-height: 120px;
+  }
+}
+
+.flip.curriculum::after {
+  background-image: url('../assets/images/cv.png');
+  transform: rotateY(-180deg);
+}
+
+.work-life {
+  margin-bottom: 20px;
+}
