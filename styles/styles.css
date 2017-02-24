@@ -76,7 +76,7 @@ figure {
   margin: 0;
 }
 
-figcaption {
+figcaption, .legend {
     margin: 5px 0 20px;
     font-style: italic;
     font-size: 0.8em;
@@ -96,6 +96,13 @@ figcaption a.attribution {
 	font-weight: 400;
 }
 
+.attentionText {
+  font-weight: bold;
+}
+
+.referenceText {
+  font-style: italic;
+}
 @media (max-width: 767px) {
   
   h1 {
@@ -603,7 +610,7 @@ ul.job-functions li.job {
     margin-right: 1%;
   }
 
-  .occupational-history figcaption {
+  .occupational-history .legend {
       display: none;
   }  
 

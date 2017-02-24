@@ -157,7 +157,7 @@ $("#form-contact").submit(function(event) {
 	
 	if (asunto.value && asunto.value.match(/\S+/g).length > asunto.dataset.maxwords) {
 		activateError(asunto.id,  "maxWords");
-		
+		thisForm.isValid = false;		
 	}
 	if (!thisForm.isValid) {
 		return;
