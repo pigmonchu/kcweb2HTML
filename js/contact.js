@@ -184,9 +184,6 @@ $("#form-contact").submit(function(event) {
 		})		
 		.fail(function (error) {
 			console.error("Error guardando contacto.", error);
-		})
-		.always(function(object, textStatus) {
-			setTimeout(function(){ loader.fadeOut(); }, 1000);
 		});
 	
 	/* envía peticiones Ajax
