@@ -24,19 +24,19 @@ var activateError = function (fieldName, validationType) {
 
 var sendContact = function() {
 	$.ajax({
-			type: "POST",
-			url: API_URL + "contact",
-			data: data,
-		})
-		.done(function(data) {
-			thisForm.reset();
-			// enviar correo a mi mismo
+		type: "POST",
+		url: API_URL + "contact",
+		data: data,
+	})
+	.done(function(data) {
+		thisForm.reset();
+		alert("Contacto enviado. En breve recibirá respuesta.")		
+	})		
+	.fail(function (error) {
+		console.error("Error guardando contacto.", error);
+	});
 
-		})		
-		.fail(function (error) {
-			console.error("Error guardando contacto.", error);
-		});
-		
+	
 }
 
 var clearContacts = function() {
@@ -173,19 +173,28 @@ $("#form-contact").submit(function(event) {
 	}
 	
 	loader.fadeIn();
-	$.ajax({
-			type: "POST",
-			url: API_URL + "contact",
-			data: data,
-		})
-		.done(function(data) {
-			thisForm.reset();
-			alert("Contacto enviado. En breve recibirá respuesta.")		
-		})		
-		.fail(function (error) {
-			console.error("Error guardando contacto.", error);
-		});
+
+	var img = {
+		email : "ramon@digestivethinking.com",
+		body: data.asunto
+	};
 	
+	var emailLink="mailto:" + img.email;
+	
+	img.body += ("\n\nInformación de contacto\nNombre: " + data.nombre +"\n" + (data.telefono ? ("Teléfono: " + data.telefono) : "") + "\n" + (data.correoE ? ("Correo: " + data.correoE) : "")+ "\n");
+	img.body = encodeURIComponent(img.body);
+
+	emailLink += ("?subject=Contacto desde web&body=" + img.body);
+
+	var a = document.createElement("a");      // Create an Anchor element
+	a.href = emailLink;                       // Set it's href
+	document.body.appendChild(a);             // Append to document
+	a.click();                                // Trigger a click()
+	a.parentNode.removeChild(a);              // Remove it		
+
+	loader.fadeOut();
+
+
 	/* envía peticiones Ajax
 				-graba contacto
 				-envía mail a mi mismo

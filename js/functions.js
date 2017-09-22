@@ -4,7 +4,7 @@ $().ready(function() {
   
   var _sections = [
     { href: "#experience" } ,
-    { href: "#projects" }, 
+//    { href: "#projects" }, 
     { href: "#whoiam" },
     { href: "#contact" }
   ];
